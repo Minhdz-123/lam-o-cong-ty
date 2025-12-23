@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="main">
+        <form action="" class="form" id="form-1">
+            <h1>dang ki</h1>
+            <h3>moi ban nhap thong tin dang ki</h3>
+            <div class="form-group">
+                <label for="full-name">ten dang nhap</label>
+                <input id="full-name" name="full-name" type="text" placeholder="VD: Minh Vu">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">email</label>
+                <input id="email" name="email" type="text" placeholder="VD: Minh Vu">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">mat khau</label>
+                <input id="password" name="password" type="password" placeholder="VD: Minh Vu">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="re-password">nhap lai mat khau</label>
+                <input id="re-password" name="re-password" type="password" placeholder="VD: Minh Vu">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="avatar">anh dai dien</label>
+                <input id="avatar" name="avatar" type="file" placeholder="VD: Minh Vu">
+                <span class="form-message"></span>
+            </div>
+            <div class="btn-register"><button>Dang Ki</button></div>
+        </form>
+    </div>
+        <section class = 'comment-test'>
+        <ul id = "comment-block"></ul>
+    </section>
+
+    <script src="main.js"></script>
+    <script>
+        Validator({
+            form: "#form-1",
+            rules: [
+                Validator.isRequired('#full-name'),
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                Validator.isRequired('#password'),
+                Validator.minLength('#password', 6),
+                Validator.isRequired('#re-password'),
+                Validator.isConfirmed('#re-password', () => document.querySelector('#form-1 #password').value, 'mat khau khong khop'),
+                Validator.isRequired('#avatar')
+            ],
+            onSubmit: function (data) {
+                //call API
+                console.log(data);
+            }
+        })
+
+
+    </script>
+<ul id="post-block">
+    
+</ul>
+    
+</body>
+
+</html>

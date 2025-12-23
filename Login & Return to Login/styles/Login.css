@@ -1,0 +1,315 @@
+html {
+    font-size: calc(100vw / 120);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.Left {
+    width: 34.1vw;
+    height: 100vh;
+    background-image: url('../background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.Menu {
+    position: absolute;
+    top: 7vh;
+    left: 4.9vw;
+    width: 6.5vw;
+    height: 4.9vh;
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.Center_Group {
+    position: absolute;
+    top: 50vh;
+    left: 17vw;
+    transform: translate(-50%, -50%);
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6vw;
+    width: 11.6vw;
+    height: 4.5vh;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.Logo i {
+    font-size: 0.75rem;
+    color: white;
+}
+
+.Logo h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.25rem;
+    line-height: 1;
+}
+
+.Social_Icons {
+    position: absolute;
+    bottom: 4.9vh;
+    left: 17vw;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1.3vw;
+}
+
+.Social_Icons i {
+    width: 2.1vw;
+    height: 3.9vh;
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.4vw;
+}
+
+.Wrapper {
+    width: 65.9vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.Wrapper .first {
+    padding: 11.7vh 7.8vw 0 7.8vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.Wrapper .first .text {
+    margin-bottom: 5.9vh;
+}
+
+.Wrapper .first .text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333333;
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+.Wrapper .first .text h3 {
+    font-size: 1.125rem;
+    font-weight: normal;
+    color: #999999;
+    margin: 0;
+    padding: 0;
+}
+
+.Wrapper .form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    color: #999999;
+    margin: 0;
+    padding: 0;
+}
+
+.form-group input {
+    width: 29.4vw;
+    height: 5.5vh;
+    padding: 0 1vw 0 2.9vw;
+    border: 2px solid #e0e0e0;
+    border-radius: 0.6vw;
+    font-size: 1rem;
+    color: #333333;
+    background-color: #f5f5f5;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #4A90E2;
+    background-color: #ffffff;
+}
+
+.form-group input::placeholder {
+    color: #999999;
+}
+
+.form-group:first-child input::before {
+    content: "\f007";
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    left: 1vw;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999999;
+}
+
+.form-group:nth-child(1) {
+    position: relative;
+}
+
+.form-group:nth-child(1)::before {
+    content: "\f007";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    position: absolute;
+    left: 1vw;
+    top: 1.8vh;
+    color: #999999;
+    font-size: 1.125rem;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.form-group:nth-child(2) {
+    position: relative;
+}
+
+.form-group:nth-child(2)::before {
+    content: "\f3cd";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    position: absolute;
+    left: 1vw;
+    top: 4.7vh;
+    color: #333333;
+    font-size: 1.125rem;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.form-group:nth-child(3) {
+    position: relative;
+}
+
+.form-group:nth-child(3)::before {
+    content: "\f0e0";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    position: absolute;
+    left: 1vw;
+    top: 1.8vh;
+    color: #999999;
+    font-size: 1.125rem;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.form-group:nth-child(2) input {
+    border-color: #4A90E2;
+    background-color: #ffffff;
+}
+
+.Wrapper .second {
+    padding: 3.9vh 7.8vw 7.8vh 7.8vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3.9vh;
+}
+
+._Button.base {
+    width: 29.4vw;
+    height: 5.5vh;
+    background-color: #4A90E2;
+    border-radius: 0.6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6vw;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    position: relative;
+}
+
+._Button.base::before {
+    content: "Next";
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+._Button.base .text {
+    display: none;
+}
+
+._Button.base .chevron-right::after {
+    content: "\f054";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.Wrapper .second > .text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.Wrapper .second > .text h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #999999;
+    margin: 0;
+    padding: 0;
+}
+
+.Login_BTN {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.Login_BTN button {
+    background: none;
+    border: none;
+    color: #4A90E2;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.Login_BTN button:hover {
+    text-decoration: underline;
+}

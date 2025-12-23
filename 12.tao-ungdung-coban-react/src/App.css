@@ -1,0 +1,15 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left; /* Đổi từ center sang left */
+}
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7em;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background: #F2F2F2;
+  display: block;
+  }

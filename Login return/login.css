@@ -1,0 +1,194 @@
+/* Layout chính */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+/* LEFT SIDE */
+.left {
+    width: 40%;
+    height: 100%;
+    background-color: #93c5fd;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(49,49,49,0.3) 30%, rgba(0,0,0,0.55) 55%), url("img/background.jpg");
+}
+
+.menu {
+    position: relative;
+    top: 72px;
+    left: 92px;
+    width: 124px;
+    color: white;
+}
+
+.menu p {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.icon {
+    padding: 14px 16px;
+}
+
+/* Logo + social */
+.logo-social {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    color: white;
+    padding-left: 226px;
+    padding-top: 440px;
+    align-items: center;
+}
+
+.logo-name {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    font-size: 30px;
+}
+
+/* RIGHT SIDE */
+.right {
+    width: 60%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form */
+.form {
+    width: 458px;
+}
+
+/* Section 1 */
+.title {
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #667085;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
+
+.photo-text {
+    padding: 12px 18px;
+    background: #F9FAFB;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo-text-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gray {
+    color: #98A2B3;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.black {
+    color: #1D2939;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.remove-btn {
+    color: #D92D20;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Section 2 */
+.section-2 {
+    margin-top: 68px;
+}
+
+.text-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-different {
+    font-size: 16px;
+    color: #475467;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Login button */
+.btn-login {
+    background: #1570EF;
+    padding: 16px 28px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.btn-login:hover {
+    opacity: 0.8;
+}
+
+.btn-login button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #DFDFDF;
+    padding-top: 24px;
+}
+
+.no-account {
+    font-size: 16px;
+    color: #475467;
+    font-weight: 500;
+}
+
+.signup {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2E90FA;
+    cursor: pointer;
+}
+
+.signup a {
+    text-decoration: none;
+    color: #2E90FA;
+}
